@@ -20,14 +20,14 @@ table 50105 "BBL Subscription"
             Caption = 'Membership Date';
             trigger OnValidate()
             var
-                SalesRecivableSetup: Record "Sales & Receivables Setup";
+                SalesSetup: Record "Sales & Receivables Setup";
             begin
                 //quando cambio il valore di subscription date Verifico se è vuota o no, se non è vuota calcola la data di scadenza, se è vuota allora cancella la data di scadenza
  
                 if rec."Membership Date" <> 0D then begin
-                    SalesRecivableSetup.Get();// si usa in certi cas, piu veloce dei find, ma è piu limitata,. Sfrutta la chiave primaria per leggere un record specific
-                    SalesRecivableSetup.TestField("BBL Subscription Duration");// Testfield serve a testare dei campi, per verificare che il cmpo sia valorizzato o con ubn valore specifico o che non sia vuoto
-                    "Membership Expiration" := CalcDate(SalesRecivableSetup."BBL Subscription Duration", rec."Membership Date")
+                    SalesSetup.Get();// si usa in certi cas, piu veloce dei find, ma è piu limitata,. Sfrutta la chiave primaria per leggere un record specific
+                    SalesSetup.TestField("BBL Subscription Duration");// Testfield serve a testare dei campi, per verificare che il cmpo sia valorizzato o con ubn valore specifico o che non sia vuoto
+                    "Membership Expiration" := CalcDate(SalesSetup."BBL Subscription Duration", rec."Membership Date")
                 end //importante fare le cose parametriche
                 else
                     "Membership Expiration" := 0D;

@@ -13,25 +13,36 @@ page 50104 "BBL Booking History List"
             repeater(Lines)
             {
                 field("Entry No."; Rec."Entry No.") {  }
-                field("Item No."; Rec."Item No.") {  }
+                field("Item No."; Rec."Item No.") 
+                { 
+                    Editable = FieldEditable;
+                }
                 field("Serial No."; Rec."Serial No.") 
                 { 
+                    Editable = FieldEditable;
+                    
                     trigger OnAssistEdit()                        
                     begin
                         OpenTracking();
                     end;
                  }
                 field("Subscription Id"; Rec."Subscription Id") {  }
-                field("Posting Date"; Rec."Posting Date") {  }
+                field("Delivery Date"; Rec."Delivery Date") {  }
                 field("Due Date"; Rec."Due Date") {  }
-                field("Deliver Status"; Rec."Deliver Status") {  }
-                field("Return Status"; Rec."Return Status") {  }
+                field("Reservation Status"; Rec."Reservation Status") {  }
+                field("Reserv. Status Date"; Rec."Reserv. Status Date") {  }
             }
         }
     }
 
+    trigger OnAfterGetCurrRecord()
+    begin
+        SetEditability();
+    end;
+
     var
         ITH: Page "Item Tracking Lines";
+        FieldEditable: Boolean;
 
     procedure InitFromBookingHistory(BookingHistory: Record "BBL Booking History"; var TrackingSpecification: Record "Tracking Specification")
     var
@@ -57,4 +68,10 @@ page 50104 "BBL Booking History List"
         Rec.Modify();
         CurrPage.Update();
     end;
+
+    local procedure SetEditability()
+    begin
+        FieldEditable := Rec."Line Status" = Rec."Line Status"::Open;
+    end;
+
 }

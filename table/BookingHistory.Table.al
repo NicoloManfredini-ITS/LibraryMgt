@@ -1,4 +1,4 @@
-//crea una tabella con i seguenti campi: Entry No., Item No., Serial No., Subscription Id, Posting Date, Due Date, Deliver Status, Return Status
+//crea una tabella con i seguenti campi: Entry No., Item No., Serial No., Subscription Id, Delivery Date, Due Date, Reservation Status, Status Date
 table 50102 "BBL Booking History"
 {
     DataClassification = CustomerContent;
@@ -23,25 +23,32 @@ table 50102 "BBL Booking History"
             Caption = 'Subscription Id';
             TableRelation = "BBL Subscription"."Subscription Id";
         }
-        field(5; "Posting Date"; Date)
+        field(5; "Delivery Date"; Date)
         {
-            Caption = 'Posting Date';
+            Caption = 'Delivery Date';
         }
         field(6; "Due Date"; Date)
         {
             Caption = 'Due Date';
         }
-        field(7; "Deliver Status"; Option)
+        field(7; "Reservation Status"; Option)
         {
-            Caption = 'Deliver Status';
-            OptionMembers = Pending, Delivered, Cancelled;
+            Caption = 'Reservation Status';
+            OptionMembers = " ",Delivered,Returned,Cancelled,Lost;
+            OptionCaption = ' ,Delivered,Returned,Cancelled,Lost';
         }
-        field(8; "Return Status"; Option)
+        field(8; "Reserv. Status Date"; Date)
         {
-            Caption = 'Return Status';
-            OptionMembers = NotReturned, Returned, Late;
+            Caption = 'Status Date';
+            Editable = false;
         }
-        
+        field(10; "Line Status"; Option)
+        {
+            Caption = 'Line Status';
+            OptionMembers = Open,Released;
+            OptionCaption = 'Open,Released';
+            Editable = false;
+        }
     }
     
     keys
@@ -51,4 +58,35 @@ table 50102 "BBL Booking History"
             Clustered = true;
         }
     }
+
+    trigger OnInsert()
+    begin
+        CheckFieldsOnInsert();
+    end;
+
+    trigger OnModify()
+    begin
+        Rec.TestField("Line Status", Rec."Line Status"::Open);
+    end;
+
+    local procedure CheckFieldsOnInsert()
+    begin
+        Rec.TestField("Subscription Id");
+        Rec.TestField("Item No.");
+        Rec.TestField("Serial No.");
+        CheckSerialIsAvailable();
+    end;
+
+    local procedure CheckSerialIsAvailable()
+    var
+        BookingHistory: Record "BBL Booking History";
+        BookAlreadyDeliveredErr: Label 'The serial number %1 for item %2 has already been delivered.';
+    begin
+        BookingHistory.Reset();
+        BookingHistory.SetRange("Item No.", Rec."Item No.");
+        BookingHistory.SetRange("Serial No.", Rec."Serial No.");
+        BookingHistory.SetRange("Reservation Status", "Reservation Status"::Delivered);
+        if not BookingHistory.IsEmpty then
+            Error(BookAlreadyDeliveredErr, Rec."Serial No.", Rec."Item No.");
+    end;
 }
