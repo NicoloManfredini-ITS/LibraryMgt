@@ -16,64 +16,9 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Field Full Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 164836526 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
+          <source>Id</source><target></target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Field Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Method 1552664585 - NamedType 1677889108" size-unit="char" translate="yes" xml:space="preserve">
-          <source>%1 is reserved, cannot delete.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Method CheckAvailability - NamedType BookReservedErr</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Method 2451657066 - NamedType 179276410" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Book record inserted: %1 published by %2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Method OnInsert - NamedType BookInsertedMsg</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Method 1262666395 - NamedType 912457075" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Book record modified. Author changed from %1 to %2</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Method OnModify - NamedType BookModifiedMsg</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 2842729223 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Author</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Author - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 4159815744 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Book Id</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Book Id - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 1593079109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Genre</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Genre - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 2385982501 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Is Available</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Is Available - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 1436795429 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Publication Year</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Publication Year - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 329424276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Title</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Title - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1032132979 - Field 329424276 - Method 2126772001 - NamedType 4042097394" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Title cannot be empty.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Field Title - Method OnValidate - NamedType TitleValidationErr</note>
         </trans-unit>
         <trans-unit id="Table 1134209219 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Id</source>
@@ -81,27 +26,27 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Publishers - Field Id - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1134209219 - Field 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Name</source>
+          <source>Name</source><target>Nome</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Publishers - Field Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2721997682 - Action 2217682513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Author Books</source>
+          <source>Author Books</source><target>Libri autore</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Authors - Action AuthorBooks - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3093599152 - Field 4124926755 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
-          <source>Author</source>
+          <source>Author</source><target>Autore</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field BBL Author - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3093599152 - Field 4163435558 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
-          <source>No. of Pages</source>
+          <source>No. of Pages</source><target>Nr. di pagine</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field BBL No. of Pages - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 3093599152 - Field 2752750166 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
-          <source>Publisher</source>
+          <source>Publisher</source><target>Editore</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field BBL Publisher - Property Caption</note>
         </trans-unit>
@@ -111,11 +56,165 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Method OnDelete - NamedType TestCaption</note>
         </trans-unit>
-        <trans-unit id="Table 1032132979 - Method 1262666395 - NamedType 1712592806" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Test Caption 2</source>
-          <target>Test Caption 2</target>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Library Books - Method OnModify - NamedType TestCaption2</note>
+        <trans-unit id="Table 2326899785 - Method 3170765207 - NamedType 429239498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The serial number %1 for item %2 has already been delivered.</source><target>Il seriale %1 per l'articolo %2 è già prenotato.</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Method CheckSerialIsAvailable - NamedType BookAlreadyDeliveredErr</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Method 3274967529 - NamedType 362250470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The booking line has been released.</source><target>La riga è stata rilasciata</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Method ReleaseLine - NamedType LineReleasedMsg</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 83221844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Delivery Date</source><target>Data consegna</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Delivery Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 4085727052 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Due Date</source><target>Data scadenza</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Due Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source><target>Nr. movimento</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Entry No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source><target>Nr.</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 172091438 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Status</source><target>Stato riga</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Line Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 172091438 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open,Released</source><target>Aperto,Rilasciato</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Line Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 3414877461 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reservation Status Date</source><target>Data variazione stato prenotazione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Reserv. Status Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 3651371805 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reservation Status User Id</source><target>Utente variazione stato prenotazione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Reserv. Status User Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 3579900824 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Reservation Status</source><target>Stato prenotazione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Reservation Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 3579900824 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Delivered,Returned,Cancelled,Lost</source><target> ,Consegnato,Restituito,Cancellato,Smarrito</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Reservation Status - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 47037625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source><target>Nr. seriale</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Serial No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2326899785 - Field 3614921810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subscription Id</source><target>Id sottoscrizione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Field Subscription Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1134209219 - Field 47037625 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serial No.</source><target>Nr. seriale</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Publishers - Field Serial No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 4190130733 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer No.</source><target>Nr. cliente</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field Customer No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 2133219298 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Membership Date</source><target>Data sottoscrizione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field Membership Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 4243721171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Membership Expiration</source><target>Scadenza sottoscrizione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field Membership Expiration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 1347290850 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number Of Books Returned</source><target>Nr. libri restitutiti</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field No.Books Returned - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 638139220 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Number Of Books Booked</source><target>Nr. libri in carico</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field No.Books Taken - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3573394769 - Field 3614921810 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Subscription Id</source><target>Id sottoscrizione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Subscription - Field Subscription Id - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3634277695 - Action 4032263875 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Release</source><target>Rilasciato</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page BBL Booking History List - Action Release - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3240195868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>TestAPI</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page ITS Test API - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3240195868 - Control 697060706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line Type</source><target>Tipo riga</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page ITS Test API - Control LineType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3093599152 - Field 1557138409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Genre</source><target>Genere</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field BBL Genre - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3093599152 - Field 2250788601 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Publication Year</source><target>Anno di pubblicazione</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field BBL Publication Year - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3093599152 - Field 329424276 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Title</source><target>Titolo</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field Title - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3093599152 - Field 329424276 - Method 2126772001 - NamedType 4042097394" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 3093599152">
+          <source>Title cannot be empty.</source><target>Titolo deve essere valorizzato</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50100 - Field Title - Method OnValidate - NamedType TitleValidationErr</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2455902535 - Method 763270175 - NamedType 3248324166" size-unit="char" translate="yes" xml:space="preserve" al-object-target="TableExtension 2455902535">
+          <source>%1 only supports durations in months.</source><target>%1 supporta solo durate in mesi</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50101 - Method CheckPeriodDuration - NamedType OnlyMonthsErr</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2455902535 - Field 294389003 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Reservation Period (Months)</source><target>Periodo di prenotazione (Mesi)</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50101 - Field BBL Reservation Period - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 2455902535 - Field 3905092806 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4145206282">
+          <source>Subscription Period (Months)</source><target>Periodo validità sottoscrizione (Mesi)</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension BBLT50101 - Field BBL Subscription Period - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="EnumExtension 3428250465 - EnumValue 3738877243 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Enum 1710557762">
+          <source>My Value</source>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">EnumExtension ITSE50100 - EnumValue ITS MyValue - Property Caption</note>
         </trans-unit>
       </group>
     </body>

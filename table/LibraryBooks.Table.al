@@ -1,3 +1,4 @@
+/*
 table 50100 "BBL Library Books"
 {
     DataClassification = CustomerContent;
@@ -86,5 +87,6 @@ table 50100 "BBL Library Books"
     end;
 
     
-    
+
 }
+*/

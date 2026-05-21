@@ -15,10 +15,21 @@ table 50102 "BBL Booking History"
         {
             Caption = 'Item No.';
             TableRelation = Item;
+
+            trigger OnValidate()
+            begin
+                if Rec."Item No." <> xRec."Item No." then
+                    Rec.Validate("Serial No.", '');
+            end;
         }
         field(3; "Serial No."; Code[50])
         {
             Caption = 'Serial No.';
+
+            trigger OnValidate()
+            begin
+                CheckSerialIsAvailable();
+            end;
         }
         field(4; "Subscription Id"; Code[20])
         {
@@ -81,23 +92,10 @@ table 50102 "BBL Booking History"
         }
     }
 
-    trigger OnInsert()
-    begin
-        CheckFieldsOnInsert();
-    end;
-
     trigger OnModify()
     begin
         //if CurrFieldNo <> Rec.FieldNo("Reservation Status") then
         //Rec.TestField("Line Status", Rec."Line Status"::Open);
-    end;
-
-    local procedure CheckFieldsOnInsert()
-    begin
-        Rec.TestField("Subscription Id");
-        Rec.TestField("Item No.");
-        Rec.TestField("Serial No.");
-        CheckSerialIsAvailable();
     end;
 
     local procedure CheckSerialIsAvailable()
@@ -105,6 +103,9 @@ table 50102 "BBL Booking History"
         BookingHistory: Record "BBL Booking History";
         BookAlreadyDeliveredErr: Label 'The serial number %1 for item %2 has already been delivered.';
     begin
+        if Rec."Serial No." = '' then
+            exit;
+
         BookingHistory.Reset();
         BookingHistory.SetRange("Item No.", Rec."Item No.");
         BookingHistory.SetRange("Serial No.", Rec."Serial No.");
@@ -132,6 +133,9 @@ table 50102 "BBL Booking History"
         LineReleasedMsg: Label 'The booking line has been released.';
     begin
         Rec.TestField("Line Status", "Line Status"::Open);
+        Rec.TestField("Subscription Id");
+        Rec.TestField("Item No.");
+        Rec.TestField("Serial No.");
         Rec.TestField("Reservation Status", "Reservation Status"::" ");
         Rec.Validate("Reservation Status", "Reservation Status"::Delivered);
         Rec."Line Status" := Rec."Line Status"::Released;

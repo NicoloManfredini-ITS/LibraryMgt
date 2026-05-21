@@ -26,10 +26,10 @@ page 50100 Authors
             action(AuthorBooks)
             {
                 Caption = 'Author Books';
-                RunObject = Page "BBL Library Books";
+                RunObject = Page "Item List";
                 RunPageMode = View;
-                RunPageLink = Author = field("Full Name");
-                RunPageView = sorting("Publication Year");
+                RunPageLink = "BBL Author" = field("Full Name");
+                RunPageView = sorting("BBL Publication Year");
                 Image = List;
             }
         }

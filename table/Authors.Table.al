@@ -29,19 +29,21 @@ table 50101 "BBL Authors"
 
     trigger OnDelete()
     var
-        LibraryBooks: Record "BBL Library Books";
+        Item: Record Item;
         BooksExistsErr: Label 'Cannot delete author %1 because there are %2 books associated with this author.';
         TestCaption: Label 'Test Caption';
     begin
-        LibraryBooks.Reset();
-        LibraryBooks.SetFilter(Author, '%1', Rec."Full Name");
-        if not LibraryBooks.IsEmpty() then
-            Error(BooksExistsErr, Rec."Full Name", LibraryBooks.Count());
+        Item.Reset();
+        Item.SetFilter("BBL Author", '%1', Rec."Full Name");
+        if not Item.IsEmpty() then
+            Error(BooksExistsErr, Rec."Full Name", Item.Count());
 
-        LibraryBooks.FindFirst();
-        LibraryBooks.FindLast();
-        LibraryBooks.FindSet();
-        LibraryBooks.FindSet(true);
-        if LibraryBooks.IsEmpty() then;
+        /*
+        Item.FindFirst();
+        Item.FindLast();
+        Item.FindSet();
+        Item.FindSet(true);
+        if Item.IsEmpty() then;
+        */
     end;
 }

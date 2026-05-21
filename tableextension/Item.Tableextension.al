@@ -5,8 +5,6 @@ tableextension 50100 BBLT50100 extends Item
         field(50100; "BBL Author"; Text[100])
         {
             Caption = 'Author';
-            // TableRelation = "Sales Header"."No." where("Document Type" = filter(order|quote));
-            // TableRelation = "Sales Header"."Sell-to Customer No." where("Document Type" = filter(order|quote));
             TableRelation = "BBL Authors"."Full Name";
         }
         field(50101; "BBL Publisher"; Text[100])
@@ -18,5 +16,29 @@ tableextension 50100 BBLT50100 extends Item
         {
             Caption = 'No. of Pages';
         }
+        field(50103; Title; Text[100])
+        {            
+            Caption = 'Title';
+            trigger OnValidate()
+            var
+                TitleValidationErr: Label 'Title cannot be empty.';
+            begin
+                if (Rec.Title = '') and (xRec.Title <> '') then
+                    Error(TitleValidationErr);
+            end;
+        }
+        field(50104; "BBL Publication Year"; Integer)
+        {            
+            Caption = 'Publication Year';
+        }
+        field(50105; "BBL Genre"; Text[50])
+        {            
+            Caption = 'Genre';
+        }
+    }
+
+    keys
+    {
+        key(BBLKey1; "BBL Publication Year") { }
     }
 }
