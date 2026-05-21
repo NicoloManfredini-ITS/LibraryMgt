@@ -12,7 +12,7 @@ page 50104 "BBL Booking History List"
         {
             repeater(Lines)
             {
-                field("Entry No."; Rec."Entry No.") {  }
+                field("Entry No."; Rec."Entry No.") { }
                 field("Item No."; Rec."Item No.") 
                 { 
                     Editable = FieldEditable;
@@ -25,12 +25,35 @@ page 50104 "BBL Booking History List"
                     begin
                         OpenTracking();
                     end;
-                 }
-                field("Subscription Id"; Rec."Subscription Id") {  }
-                field("Delivery Date"; Rec."Delivery Date") {  }
-                field("Due Date"; Rec."Due Date") {  }
-                field("Reservation Status"; Rec."Reservation Status") {  }
-                field("Reserv. Status Date"; Rec."Reserv. Status Date") {  }
+                }
+                field("Subscription Id"; Rec."Subscription Id") 
+                { 
+                    Editable = FieldEditable;
+                }
+                field("Delivery Date"; Rec."Delivery Date") { }
+                field("Due Date"; Rec."Due Date") { }
+                field("Reservation Status"; Rec."Reservation Status") { }
+                field("Reserv. Status Date"; Rec."Reserv. Status Date") { }
+                field("Reserv. Status User Id"; Rec."Reserv. Status User Id") { }
+            }
+        }
+    }
+
+    actions
+    {
+        area(processing)
+        {
+            action(Release)
+            {
+                Caption = 'Release';
+                Image = ReleaseDoc;
+
+                trigger OnAction()
+                begin
+                    Rec.ReleaseLine();
+                    SetEditability();
+                    CurrPage.Update();
+                end;
             }
         }
     }
