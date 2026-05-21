@@ -33,7 +33,5 @@ page 50100 Authors
                 Image = List;
             }
         }
-        area(Reporting)
-        { }
     }
 }
