@@ -72,8 +72,8 @@ codeunit 50101 "BBL Custom Mgt."
     end;
     #endregion
 
-    #region [Authors]
 
+    #region [Authors]
 
     #endregion
 }

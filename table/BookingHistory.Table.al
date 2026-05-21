@@ -33,7 +33,7 @@ table 50102 "BBL Booking History"
                 CustomMgt.CheckSerialIsAvailable(Rec);
             end;
         }
-        field(4; "Subscription Id"; Code[20])
+        field(4; "Subscription Id"; Guid)
         {
             Caption = 'Subscription Id';
             TableRelation = "BBL Subscription"."Subscription Id";

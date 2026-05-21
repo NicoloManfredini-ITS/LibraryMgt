@@ -1,6 +1,7 @@
 //Crea una pagina di tipo lista con i campi della booking history
 page 50104 "BBL Booking History List"
 {
+    Caption = 'Booking History';
     PageType = List;
     SourceTable = "BBL Booking History";
     ApplicationArea = All;
@@ -26,7 +27,6 @@ page 50104 "BBL Booking History List"
                         CustomMgt: Codeunit "BBL Custom Mgt.";
                     begin
                         CustomMgt.OpenTrackingFromBookingHistory(Rec);
-                        CurrPage.Update();
                     end;
                 }
                 field("Subscription Id"; Rec."Subscription Id")

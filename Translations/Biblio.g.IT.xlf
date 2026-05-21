@@ -56,16 +56,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Method OnDelete - NamedType TestCaption</note>
         </trans-unit>
-        <trans-unit id="Table 2326899785 - Method 3170765207 - NamedType 429239498" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The serial number %1 for item %2 has already been delivered.</source><target>Il seriale %1 per l'articolo %2 è già prenotato.</target>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Method CheckSerialIsAvailable - NamedType BookAlreadyDeliveredErr</note>
-        </trans-unit>
-        <trans-unit id="Table 2326899785 - Method 3274967529 - NamedType 362250470" size-unit="char" translate="yes" xml:space="preserve">
-          <source>The booking line has been released.</source><target>La riga è stata rilasciata</target>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Table BBL Booking History - Method ReleaseLine - NamedType LineReleasedMsg</note>
-        </trans-unit>
         <trans-unit id="Table 2326899785 - Field 83221844 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Delivery Date</source><target>Data consegna</target>
           <note from="Developer" annotates="general" priority="2" />
@@ -166,16 +156,6 @@
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page BBL Booking History List - Action Release - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 3240195868 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>TestAPI</source>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Page ITS Test API - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3240195868 - Control 697060706 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Line Type</source><target>Tipo riga</target>
-          <note from="Developer" annotates="general" priority="2" />
-          <note from="Xliff Generator" annotates="general" priority="3">Page ITS Test API - Control LineType - Property Caption</note>
-        </trans-unit>
         <trans-unit id="TableExtension 3093599152 - Field 1557138409 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Genre</source><target>Genere</target>
           <note from="Developer" annotates="general" priority="2" />
@@ -215,6 +195,26 @@
           <source>My Value</source>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">EnumExtension ITSE50100 - EnumValue ITS MyValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1295878369 - Method 3170765207 - NamedType 429239498" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The serial number %1 for item %2 has already been delivered.</source><target>Il nr. seriale %1 per l'articolo %2 è già prenotato.</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BBL Custom Mgt. - Method CheckSerialIsAvailable - NamedType BookAlreadyDeliveredErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1295878369 - Method 1826437208 - NamedType 362250470" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The booking line has been released.</source><target>La riga è stata rilasciata.</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit BBL Custom Mgt. - Method ReleaseBookingHistoryLine - NamedType LineReleasedMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 2721997682 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Authors</source><target>Autori</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page Authors - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3634277695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Booking History</source><target>Storico prenotazioni</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page BBL Booking History List - Property Caption</note>
         </trans-unit>
       </group>
     </body>

@@ -4,8 +4,8 @@ page 50100 Authors
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "BBL Authors";
-    
-    
+    Caption = 'Authors';
+        
     layout
     {
         area(Content)
