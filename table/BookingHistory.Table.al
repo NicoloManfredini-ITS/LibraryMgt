@@ -27,8 +27,10 @@ table 50102 "BBL Booking History"
             Caption = 'Serial No.';
 
             trigger OnValidate()
+            var
+                CustomMgt: Codeunit "BBL Custom Mgt.";
             begin
-                CheckSerialIsAvailable();
+                CustomMgt.CheckSerialIsAvailable(Rec);
             end;
         }
         field(4; "Subscription Id"; Code[20])
@@ -42,8 +44,10 @@ table 50102 "BBL Booking History"
             Editable = false;
 
             trigger OnValidate()
+            var
+                CustomMgt: Codeunit "BBL Custom Mgt.";
             begin
-                SetDueDateFromDeliveryDate();
+                CustomMgt.SetDueDateFromDeliveryDate(Rec);
             end;
         }
         field(6; "Due Date"; Date)
@@ -98,50 +102,6 @@ table 50102 "BBL Booking History"
         //Rec.TestField("Line Status", Rec."Line Status"::Open);
     end;
 
-    local procedure CheckSerialIsAvailable()
-    var
-        BookingHistory: Record "BBL Booking History";
-        BookAlreadyDeliveredErr: Label 'The serial number %1 for item %2 has already been delivered.';
-    begin
-        if Rec."Serial No." = '' then
-            exit;
-
-        BookingHistory.Reset();
-        BookingHistory.SetRange("Item No.", Rec."Item No.");
-        BookingHistory.SetRange("Serial No.", Rec."Serial No.");
-        BookingHistory.SetRange("Reservation Status", "Reservation Status"::Delivered);
-        if not BookingHistory.IsEmpty then
-            Error(BookAlreadyDeliveredErr, Rec."Serial No.", Rec."Item No.");
-    end;
-
-    local procedure SetDueDateFromDeliveryDate()
-    var
-        SalesSetup: Record "Sales & Receivables Setup";
-    begin
-        if Rec."Delivery Date" = 0D then begin
-            Rec."Due Date" := 0D;
-            exit;
-        end;
-
-        SalesSetup.Get();
-        SalesSetup.TestField("BBL Reservation Period");
-        Rec."Due Date" := CalcDate(SalesSetup."BBL Reservation Period", Rec."Delivery Date");
-    end;
-
-    procedure ReleaseLine()
-    var
-        LineReleasedMsg: Label 'The booking line has been released.';
-    begin
-        Rec.TestField("Line Status", "Line Status"::Open);
-        Rec.TestField("Subscription Id");
-        Rec.TestField("Item No.");
-        Rec.TestField("Serial No.");
-        Rec.TestField("Reservation Status", "Reservation Status"::" ");
-        Rec.Validate("Reservation Status", "Reservation Status"::Delivered);
-        Rec."Line Status" := Rec."Line Status"::Released;
-        Rec.Modify();
-        Message(LineReleasedMsg);
-    end;
 }
 
 /*
