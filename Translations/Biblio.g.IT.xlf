@@ -16,12 +16,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Field Full Name - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 164836526 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source><target></target>
+          <source>Id</source><target>Id</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Authors - Field Id - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1134209219 - Field 415504711 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Id</source>
+          <source>Id</source><target>Id</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table BBL Publishers - Field Id - Property Caption</note>
         </trans-unit>
@@ -215,6 +215,16 @@
           <source>Booking History</source><target>Storico prenotazioni</target>
           <note from="Developer" annotates="general" priority="2" />
           <note from="Xliff Generator" annotates="general" priority="3">Page BBL Booking History List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1748333116 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Booking History</source><target>Storico prenotazioni</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">Page BBL Booking History Item Sub. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 718249458 - Control 1940537445 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Booking History</source><target>Storico prenotazioni</target>
+          <note from="Developer" annotates="general" priority="2" />
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension NVSP50101 - Control BookingHistory - Property Caption</note>
         </trans-unit>
       </group>
     </body>

@@ -19,8 +19,6 @@ page 50100 Authors
     
     actions
     {
-        area(Processing)
-        { }
         area(Navigation)
         {
             action(AuthorBooks)
